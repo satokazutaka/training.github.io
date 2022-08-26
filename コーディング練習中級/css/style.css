@@ -1,0 +1,337 @@
+body{
+  margin: 0;
+}
+a{z-index: 1;
+  /* text-decoration: none; */
+  color:inherit;
+  text-decoration: none;
+}
+h1, h2{
+  margin: 0;
+ 
+
+}
+ul{list-style: none;
+padding-left: 0;
+}
+.container{
+  width:calc(100% - 32px);
+  margin: 0 auto;
+  /* outline:2px solid red; */
+  max-width: 1000px;
+}
+
+
+/* header */
+header{
+ position:fixed;
+ width:100%;
+z-index: 10;
+}
+header h1{
+  padding: 8px;
+  background-color:#fff;
+  text-decoration: none;
+  font-weight:normal;
+  font-size: 32px;
+  /* margin: 8px; */
+  color:black;
+}
+header a{ text-decoration: none;
+/* background: #ccc; */
+}
+header ul{
+  margin: 0;
+  margin-left: 8px;
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+  width:400px;
+  font-size: 12px;
+  
+  
+}
+header li{
+  color:#fff;
+  
+}
+header nav{
+ 
+  background: #000;
+  line-height: 48px;
+}
+
+
+/* hero */
+.hero{
+  padding-top: 90px;
+}
+.hero img{
+  width:100%;
+margin-top: 32px;
+}
+.hero h2{
+  font-size: 16px;
+}
+ .more{
+  
+  text-align: center;
+  /* display: inline-block; */
+  /* padding: 16px; 
+ border-bottom: #000;
+  margin: 0 auto;
+ transition: .5s; */
+ 
+}
+.more  a{
+  /* display: inline-block; */
+padding-bottom: 1px;
+color:#333;
+position:relative;
+}
+.more  a::after{
+  content:'';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  /* transition: all 200ms ease;  */
+  transition:.3s ease-out;
+}
+.more :hover::after{
+  opacity: 0;
+  transform:translateY(3px);
+}
+
+/* article */
+.article{
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.article p{
+  font-size: 16px;;
+}
+.article img{
+  width:100%;
+
+}
+.article a{
+  padding-bottom: 1px;
+color:#333;
+position:relative;
+
+}
+.article .abc {
+  text-align: center;
+}
+.article tab{
+  margin: 8px;
+}
+.article a::after{
+  content:'';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  /* transition: all 200ms ease;  */
+  transition:.3s ease-out;
+}
+.article p{
+  text-align: center;
+  width:80%;
+  margin: 8px auto;
+
+}
+
+.article :hover::after{
+  opacity: 0;
+  transform:translateY(3px);
+}
+
+.article section+section{
+  margin-top: 64px;
+}
+
+/* profile */
+.pro {
+  text-align: center;
+  margin: 64px 0;
+padding-top: 64px;
+}
+.pro img{
+ 
+  width:100px;
+  border-radius: 50%;
+}
+.pro h2{
+font-size: 20px;
+margin-top: 24px;
+
+}
+.pro p{
+  text-align: left;
+}
+
+
+/* ランキング */
+.rank h2{
+  text-align: center;
+  margin-bottom: 16px;
+}
+.rank img{
+width:100%;
+}
+.rank p{
+  margin: 0;
+}
+.rank section+section{
+  margin-top: 32px;
+}
+
+
+/* アチーブ */
+.arc{
+  margin: 64px 0;
+  padding-bottom: 64px;
+}
+
+.arc h2{
+  text-align: center;
+}
+
+
+.arc li{
+ 
+
+  line-height: 48px;
+  border-top:2px solid black;
+  
+}
+.arc ul{
+  border-bottom:2px solid black;
+}
+
+
+/* フッター */
+footer{
+  background:#eee
+}
+footer h2{
+  font-size: 16px;
+}
+footer .abo{
+  padding-top: 24px;
+}
+ul.cp_list {
+	padding:0.5em;
+	list-style-type:none;
+}
+ul.cp_list li {
+	position:relative;
+	padding: 0em 0.3em 0.3em 1.3em;
+}
+ul.cp_list li:before {
+	position:absolute;
+	content:'';
+	top: 0.5em;
+	left: 0.2em;
+	height:0;
+	width:0;
+	border-style: solid;
+	border-width: 6px 0 6px 9px;
+	border-color: transparent transparent transparent black;
+}
+.menu{
+  margin-top: 48px;
+}
+.menu h2{
+  margin-bottom: 24px;
+}
+.menu li{
+ 
+  line-height:32px;
+  border-top:1px solid black;
+}
+.twitter{
+  margin-top: 48px;
+  margin-bottom: 64px;
+
+}
+.sm{
+  text-align: center;
+  font-size: 8px;
+}
+
+.timeline {
+  max-width: 100%;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+
+
+
+/* 大スクリーン */
+@media(min-width:600px){
+.hero .container{
+  display: flex;
+  width:calc((100% - 32px));
+  margin: 0 auto;
+  gap:8px;
+}
+.a {
+  display: flex;
+
+  
+}
+.aa{width:3000px;
+  
+}
+.bb{
+  margin-top: 0;
+  padding: 0;
+}
+.pro{
+  margin: 0;
+
+}
+
+footer .container{
+  display: flex;
+  gap:8px;
+}
+
+
+footer section{
+
+
+  width:calc(100%  / 3 );
+  margin: 0 ;
+ 
+  padding: 0;
+}
+footer section+section{
+  margin: 0;padding: 0;
+  vertical-align: top;
+}
+
+
+.twitter{
+  margin-top:24px;
+  margin-bottom: 0;
+}
+.menu{
+  margin: 24px;padding: 0;
+}
+.abo{
+    margin: 0;padding: 0;
+  }
+
+
+}
+
